@@ -1,0 +1,10 @@
+services:
+  chrony:
+    build:
+      context: ./chrony
+    container_name: chrony
+    hostname: chrony
+    environment:
+      - LOG_LEVEL=0
+    network_mode: "host"
+    restart: always

@@ -1,0 +1,9 @@
+services:
+  isc-dhcp:
+    build:
+      context: ./isc-dhcp
+    container_name: isc-dhcp
+    hostname: isc-dhcp
+    volumes:
+      - ./isc-dhcp/dhcpd.conf:/etc/dhcp/dhcpd.conf
+    network_mode: "host"

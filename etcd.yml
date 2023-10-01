@@ -1,0 +1,28 @@
+services:
+  etcd:
+    image: gcr.io/etcd-development/etcd:v3.4.27-arm64
+    container_name: etcd
+    hostname: etcd
+    environment:
+      ETCD_UNSUPPORTED_ARCH: arm64
+    network_mode: "host"
+    volumes:
+      - etcd-data:/etcd-data
+    command: [
+      "/usr/local/bin/etcd",
+      "--data-dir=/etcd-data",
+      "--listen-client-urls=http://0.0.0.0:2379",
+      "--advertise-client-urls=http://0.0.0.0:2379",
+      "--listen-peer-urls=http://0.0.0.0:2380",
+      "--initial-advertise-peer-urls=http://0.0.0.0:2380",
+      "--initial-cluster=default=http://0.0.0.0:2380",
+      "--initial-cluster-token=tkn",
+      "--initial-cluster-state=new",
+      "--log-level=info",
+      "--logger=zap",
+      "--log-outputs=stderr"
+    ]
+
+volumes:
+  etcd-data:
+    driver: local

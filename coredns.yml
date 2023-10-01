@@ -1,0 +1,10 @@
+services:
+  coredns:
+    image: coredns/coredns:latest
+    container_name: coredns
+    hostname: coredns
+    network_mode: "host"
+    volumes:
+      - './coredns:/etc/coredns'
+    command: -conf /etc/coredns/Corefile
+    restart: on-failure
