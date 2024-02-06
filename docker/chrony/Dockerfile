@@ -9,4 +9,4 @@ EXPOSE 123/udp
 
 HEALTHCHECK CMD chronyc tracking || exit 1
 
-ENTRYPOINT [ "/bin/sh", "/opt/startup.sh" ]
+ENTRYPOINT [ "/bin/sh", "/opt/docker-entrypoint.sh" ]
