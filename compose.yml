@@ -1,0 +1,17 @@
+services:
+  chrony:
+    extends:
+      file: docker/chrony.yml
+      service: chrony
+  coredns:
+    extends:
+      file: docker/coredns.yml
+      service: coredns
+  etcd:
+    extends:
+      file: docker/etcd.yml
+      service: etcd
+  isc-dhcp:
+    extends:
+      file: docker/isc-dhcp.yml
+      service: isc-dhcp

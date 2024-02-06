@@ -1,0 +1,23 @@
+bright-room.net {
+    hosts {
+        172.22.10.1     gateway1.bright-room.work ntp1.bright-room.work dns1.bright-room.work
+        172.22.10.60    node1.bright-room.work
+        172.22.10.61    node2.bright-room.work
+        172.22.10.62    node3.bright-room.work
+        172.22.10.70    node4.bright-room.work
+    }
+    etcd {
+        path /skydns
+        endpoint http://localhost:2379
+    }
+    cache
+    errors
+    log
+}
+
+. {
+    forward . 8.8.8.8:53 8.8.4.4:53
+    cache
+    errors
+    log
+}
