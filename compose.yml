@@ -15,3 +15,7 @@ services:
     extends:
       file: docker/isc-dhcp.yml
       service: isc-dhcp
+
+volumes:
+  etcd-data:
+    driver: local
