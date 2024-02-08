@@ -22,7 +22,3 @@ services:
       "--logger=zap",
       "--log-outputs=stderr"
     ]
-
-volumes:
-  etcd-data:
-    driver: local
