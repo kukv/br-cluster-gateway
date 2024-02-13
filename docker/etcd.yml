@@ -22,3 +22,5 @@ services:
       "--logger=zap",
       "--log-outputs=stderr"
     ]
+    healthcheck:
+      test: etcdctl endpoint health
