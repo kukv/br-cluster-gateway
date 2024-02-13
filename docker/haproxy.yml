@@ -4,5 +4,4 @@ services:
       context: ./haproxy
     container_name: haproxy
     hostname: haproxy
-    ports:
-      - 6443
+    network_mode: "host"
