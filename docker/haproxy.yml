@@ -1,0 +1,8 @@
+services:
+  haproxy:
+    build:
+      context: ./haproxy
+    container_name: haproxy
+    hostname: haproxy
+    ports:
+      - 6443
