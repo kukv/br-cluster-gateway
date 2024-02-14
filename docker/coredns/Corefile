@@ -1,4 +1,4 @@
-bright-room.net {
+bright-room.work {
     hosts {
         172.22.10.1     gateway1.bright-room.work ntp1.bright-room.work dns1.bright-room.work
         172.22.10.60    node1.bright-room.work
