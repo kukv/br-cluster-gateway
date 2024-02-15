@@ -5,6 +5,7 @@ bright-room.work {
         172.22.10.61    node2.bright-room.work
         172.22.10.62    node3.bright-room.work
         172.22.10.70    node4.bright-room.work
+        172.22.10.71    node4.bright-room.work
     }
     etcd {
         path /skydns
