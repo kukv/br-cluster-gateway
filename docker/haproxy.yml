@@ -1,7 +1,0 @@
-services:
-  haproxy:
-    build:
-      context: ./haproxy
-    container_name: haproxy
-    hostname: haproxy
-    network_mode: "host"
