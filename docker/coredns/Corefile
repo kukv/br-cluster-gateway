@@ -1,6 +1,7 @@
 bright-room.work {
     hosts {
         172.22.10.1     gateway1.bright-room.work ntp1.bright-room.work dns1.bright-room.work
+        172.22.10.80    external1.bright-room.work
         172.22.10.60    node1.bright-room.work
         172.22.10.61    node2.bright-room.work
         172.22.10.62    node3.bright-room.work
