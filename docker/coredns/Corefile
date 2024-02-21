@@ -1,12 +1,13 @@
 bright-room.work {
     hosts {
         172.22.10.1     gateway1.bright-room.work ntp1.bright-room.work dns1.bright-room.work
-        172.22.10.80    external1.bright-room.work
+        172.22.10.80    external1.bright-room.work s3.bright-room.work vault.bright-room.work
         172.22.10.60    node1.bright-room.work
         172.22.10.61    node2.bright-room.work
         172.22.10.62    node3.bright-room.work
         172.22.10.70    node4.bright-room.work
         172.22.10.71    node4.bright-room.work
+        172.22.10.100   monitoring.bright-room.work
     }
     etcd {
         path /skydns
